@@ -1,6 +1,6 @@
 ### Calculate BMI
 POST http://localhost:8000/bmi/
-Content-Type: application/javascript
+Content-Type: application/json
 Accept: application/json
 
 {
@@ -10,7 +10,7 @@ Accept: application/json
 
 ### Age Calculate
 POST http://localhost:8000/age/
-Content-Type: application/javascript
+Content-Type: application/json
 Accept: application/json
 
 {
@@ -19,7 +19,7 @@ Accept: application/json
 
 ### Percentage Calculate
 POST http://localhost:8000/percentage/
-Content-Type: application/javascript
+Content-Type: application/json
 Accept: application/json
 
 {
