@@ -1,0 +1,28 @@
+### Calculate BMI
+POST http://localhost:8000/bmi/
+Content-Type: application/javascript
+Accept: application/json
+
+{
+    "height": 173,
+    "weight": 65
+}
+
+### Age Calculate
+POST http://localhost:8000/age/
+Content-Type: application/javascript
+Accept: application/json
+
+{
+    "birth_year": 1973
+}
+
+### Percentage Calculate
+POST http://localhost:8000/percentage/
+Content-Type: application/javascript
+Accept: application/json
+
+{
+    "marks_obtained": 973,
+    "total_marks": 1000
+}
