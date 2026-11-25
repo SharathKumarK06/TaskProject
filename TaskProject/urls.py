@@ -24,4 +24,5 @@ urlpatterns = [
     path('age/', views.AgeView.as_view()),
     path('percentage/', views.PercentageView.as_view()),
     path('simple-interest/', views.SimpleInterestView.as_view()),
+    path('electricity-bill/', views.ElectricityBillView.as_view()),
 ]

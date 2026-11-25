@@ -37,3 +37,14 @@ Accept: application/json
     "rate": 3.6,
     "time": 2
 }
+
+### Electricity Bill Calculate
+POST http://localhost:8000/electricity-bill/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "units": 150,
+    "rate": 6
+}
+

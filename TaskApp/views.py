@@ -59,9 +59,14 @@ class SimpleInterestView(View):
 
 # electricity bill = units * rate
 @method_decorator(csrf_exempt, name="dispatch")
-class View(View):
+class ElectricityBillView(View):
     def post(self, request):
         data = json.loads(request.body)
+        units = data.get("units")
+        rate = data.get("rate")
+        electricity_bill = units * rate
         return JsonResponse({
-            # "":,
+            "units": units,
+            "rate": rate,
+            "bill": electricity_bill,
         })
