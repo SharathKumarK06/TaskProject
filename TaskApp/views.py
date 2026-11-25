@@ -45,22 +45,23 @@ class PercentageView(View):
 @method_decorator(csrf_exempt, name="dispatch")
 class SimpleInterestView(View):
     def post(self, request):
-        data = json.get(request.body)
+        data = json.loads(request.body)
         principal = data.get("principal")
         rate = data.get("rate")
         time = data.get("time")
+        simple_interest = (principal * rate * time) / 100
         return JsonResponse({
             "principal": principal,
             "rate": rate,
             "time": time,
-            "time": time,
+            "simple_interest": simple_interest
         })
 
 # electricity bill = units * rate
 @method_decorator(csrf_exempt, name="dispatch")
 class View(View):
     def post(self, request):
-        data = json.get(request.body)
+        data = json.loads(request.body)
         return JsonResponse({
-            "":
+            # "":,
         })

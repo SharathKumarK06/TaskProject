@@ -26,3 +26,14 @@ Accept: application/json
     "marks_obtained": 973,
     "total_marks": 1000
 }
+
+### Simple Interest Calculate
+POST http://localhost:8000/simple-interest/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "principal": 973,
+    "rate": 3.6,
+    "time": 2
+}
